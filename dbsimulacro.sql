@@ -88,6 +88,7 @@ INSERT INTO `escuela_universidad` (`universidad_id`, `escuela_id`) VALUES
 
 CREATE TABLE `estudiante` (
   `id` int(11) NOT NULL,
+  `codigo` varchar(15) COLLATE utf8_spanish_ci NOT NULL UNIQUE,
   `nombres` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
   `apellido_paterno` varchar(60) COLLATE utf8_spanish_ci NOT NULL,
   `apellido_materno` varchar(60) COLLATE utf8_spanish_ci NOT NULL,
